@@ -12,3 +12,6 @@ if (!require("plotly", quietly = TRUE))
 
 if (!require("listviewer", quietly = TRUE))
   install.packages("listviewer")
+
+if (!require("RSQLite", quietly = TRUE))
+  install.packages("RSQLite")
