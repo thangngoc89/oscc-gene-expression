@@ -33,7 +33,7 @@ foreach(core=1:total_cores, .combine = c) %dopar% {
         # log(count)
         plotCounts$count <- log(plotCounts$count)
         # Turn cluster2 levels into integer
-        plotCounts$cluster2 <- as.numeric(levels(plotCounts$cluster2))
+        # plotCounts$cluster2 <- as.numeric(levels(plotCounts$cluster2))
         # Rename columns (for smaller JSON size)
         colnames(plotCounts) <- c('y','x','n')
         json <-toJSON(plotCounts, rownames = FALSE, digits=NA)
